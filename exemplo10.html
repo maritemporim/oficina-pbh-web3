@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <style>
+
+        *{
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .bloco{
+            color: black;
+            padding: 1rem;
+            margin: 1rem;
+            width: 5rem;
+            height: 3rem;
+        }
+
+        .par{
+            background-color: lightpink;
+        }
+        .impar{
+            background-color: lightblue;
+        }
+
+        .container{
+            height: 15rem;
+            border: 1px solid purple;
+            box-shadow: .3rem .3rem .5rem .01rem purple;
+            display: flex;
+            flex-wrap: 4rem;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <script>
+            /*Estrutura Condicional
+             * Comandos de saida 
+             Declaração de variavel
+            Comando de entrada
+            TAmplete String*/
+    
+        let num = parseInt(prompt("Informe o numero:"));
+        
+        if(num % 2 == 0)
+        document.write(`<div class="bloco par">O numero ${num} é par! </div>`);
+
+        else
+        document.write(`<div class="bloco impar">O numero ${num} é impar! </div>`);
+
+        
+        
+        
+        </script>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <style>
+
+        *{
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .bloco{
+            background-color: lightpink;
+            color: black;
+            padding: 1rem;
+            margin: 1rem;
+            width: 5rem;
+            height: 3rem;
+        }
+
+        .container{
+            height: 15rem;
+            border: 1px solid purple;
+            box-shadow: .3rem .3rem .5rem .01rem purple;
+            display: flex;
+            flex-wrap: 4rem;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+    <script>
+        /*Estrutura Sequencial
+         * Comandos de saida 
+         Declaração de variavel
+         Comando de entrada*/
+    
+        let num = parseInt(prompt("Informe o numero:"));
+        
+        document.write(`<div class="bloco">log_2(${num}) = ${Math.log2(num)} </div>`);
+        document.write(`<div class="bloco">log_10(${num}) = ${Math.log10(num)} </div>`);
+        document.write(`<div class="bloco">log_e(${num}) = ${Math.log(num)} </div>`);
+        document.write(`<div class="bloco">Raiz(${num}) = ${Math.sqrt(num)} </div>`);
+        document.write(`<div class="bloco">${num} ^3 = ${Math.pow(num,3)} </div>`);
+        
+    </script>
+    </div>
+
+</body>
+</html>
